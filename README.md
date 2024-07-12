@@ -30,10 +30,12 @@ cd my-app``
 npm install``
 
 - Install required packages:
+  
 ``bash
 npx expo install react-native-gesture-handler@2.16.1 react-native-reanimated@3.10.1 react-native-safe-area-context@4.10.1 react-native-screens@3.31.1``
 
 - Start the application:
+  
 ``bash
 npm start``
 
@@ -53,6 +55,7 @@ npm start``
 
 - API Integration
   - The app fetches data from the Fake Store API:
+    
 ``
 const fetchProducts = async () => {
   try {
@@ -65,6 +68,7 @@ const fetchProducts = async () => {
 
 - Local Storage
   - The app uses AsyncStorage to manage cart items:
+    
 ``
 const addToCart = async (product) => {
   try {
@@ -77,6 +81,7 @@ const addToCart = async (product) => {
   }
 };``
 
+
 ``const fetchCart = async () => {
   try {
     let cartItems = await AsyncStorage.getItem('cart');
@@ -86,6 +91,7 @@ const addToCart = async (product) => {
     console.error(error);
   }
 };``
+
 
 ``const removeFromCart = async (product) => {
   try {
